@@ -818,7 +818,7 @@ static float length(const Vector3 &v)
 static float angle(const Vector3 &a, const Vector3 &b)
 {
 	const Vector3 c = cross(a, b);
-	return abs(atan2(length(c), dot(a, b)));
+	return abs(atan2f(length(c), dot(a, b)));
 }
 
 static bool isNormalized(const Vector3 &v, float epsilon = kNormalEpsilon)
